@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/sbr/AndroidStudioProjects/aauto-sdk-demo/app/src/main/res/layout/activity_car_main.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/sbr/AndroidStudioProjects/aauto-sdk-demo/app/src/main/res/layout/fragment_demo.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/sbr/AndroidStudioProjects/aauto-sdk-demo/app/src/main/res/layout/fragment_log.xml" value="0.625" />
+        <entry key="..\:/Users/sbr/AndroidStudioProjects/aauto-sdk-demo/app/src/main/res/layout/preview_demo.xml" value="0.4282238442822384" />
+        <entry key="..\:/Users/sbr/AppData/Local/Android/Sdk/platforms/android-27/data/res/layout/simple_list_item_1.xml" value="0.4282238442822384" />
+        <entry key="..\:/Users/shimo/StudioProjects/aauto-sdk-demo/app/src/main/res/drawable/bg_switch_selected.xml" value="0.15" />
+        <entry key="..\:/Users/shimo/StudioProjects/aauto-sdk-demo/app/src/main/res/drawable/bg_switch_un_select.xml" value="0.15" />
+        <entry key="..\:/Users/shimo/StudioProjects/aauto-sdk-demo/app/src/main/res/drawable/bg_white_back.xml" value="0.3025" />
+        <entry key="..\:/Users/shimo/StudioProjects/aauto-sdk-demo/app/src/main/res/drawable/border_switch.xml" value="0.15" />
+        <entry key="..\:/Users/shimo/StudioProjects/aauto-sdk-demo/app/src/main/res/drawable/custom_checkbox.xml" value="0.1805" />
+        <entry key="..\:/Users/shimo/StudioProjects/aauto-sdk-demo/app/src/main/res/drawable/divider3.xml" value="0.3025" />
+        <entry key="..\:/Users/shimo/StudioProjects/aauto-sdk-demo/app/src/main/res/drawable/ic_refresh.xml" value="0.15" />
+        <entry key="..\:/Users/shimo/StudioProjects/aauto-sdk-demo/app/src/main/res/drawable/ic_wifi_level_four.xml" value="0.15" />
+        <entry key="..\:/Users/shimo/StudioProjects/aauto-sdk-demo/app/src/main/res/layout/activity_car_main.xml" value="0.4233576642335766" />
+        <entry key="..\:/Users/shimo/StudioProjects/aauto-sdk-demo/app/src/main/res/layout/activity_wifi.xml" value="0.4670138888888889" />
+        <entry key="..\:/Users/shimo/StudioProjects/aauto-sdk-demo/app/src/main/res/layout/dialog_add_network.xml" value="0.4233576642335766" />
+        <entry key="..\:/Users/shimo/StudioProjects/aauto-sdk-demo/app/src/main/res/layout/item_add_wifi.xml" value="0.4233576642335766" />
+        <entry key="..\:/Users/shimo/StudioProjects/aauto-sdk-demo/app/src/main/res/layout/item_wifi.xml" value="0.4233576642335766" />
+        <entry key="..\:/Users/shimo/StudioProjects/aauto-sdk-demo/app/src/main/res/layout/pass_dialog.xml" value="0.4233576642335766" />
+        <entry key="..\:/Users/shimo/StudioProjects/aauto-sdk-demo/app/src/main/res/layout/radio_segment_control.xml" value="0.4233576642335766" />
+        <entry key="..\:/Users/shimo/StudioProjects/aauto-sdk-demo/app/src/main/res/layout/testinput_activity.xml" value="0.4233576642335766" />
+        <entry key="..\:/Users/shimo/StudioProjects/aauto-sdk-demo/app/src/main/res/layout/wifi_settings_activity.xml" value="0.4233576642335766" />
+      </map>
+    </option>
+  </component>
+  <component name="NullableNotNullManager">
+    <option name="myDefaultNullable" value="android.support.annotation.Nullable" />
+    <option name="myDefaultNotNull" value="android.support.annotation.NonNull" />
+    <option name="myNullables">
+      <value>
+        <list size="12">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />
+          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nullable" />
+          <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />
+          <item index="3" class="java.lang.String" itemvalue="android.support.annotation.Nullable" />
+          <item index="4" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableDecl" />
+          <item index="5" class="java.lang.String" itemvalue="androidx.annotation.Nullable" />
+          <item index="6" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.Nullable" />
+          <item index="7" class="java.lang.String" itemvalue="com.android.annotations.Nullable" />
+          <item index="8" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNullable" />
+          <item index="9" class="java.lang.String" itemvalue="javax.annotation.CheckForNull" />
+          <item index="10" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.Nullable" />
+          <item index="11" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NullableType" />
+        </list>
+      </value>
+    </option>
+    <option name="myNotNulls">
+      <value>
+        <list size="11">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.NotNull" />
+          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nonnull" />
+          <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.NonNull" />
+          <item index="3" class="java.lang.String" itemvalue="android.support.annotation.NonNull" />
+          <item index="4" class="java.lang.String" itemvalue="androidx.annotation.RecentlyNonNull" />
+          <item index="5" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.qual.NonNull" />
+          <item index="6" class="java.lang.String" itemvalue="com.android.annotations.NonNull" />
+          <item index="7" class="java.lang.String" itemvalue="androidx.annotation.NonNull" />
+          <item index="8" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullType" />
+          <item index="9" class="java.lang.String" itemvalue="org.checkerframework.checker.nullness.compatqual.NonNullDecl" />
+          <item index="10" class="java.lang.String" itemvalue="org.eclipse.jdt.annotation.NonNull" />
+        </list>
+      </value>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

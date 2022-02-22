@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#73000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/bg_white_back"
+        android:orientation="vertical"
+        android:padding="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+
+                    android:paddingHorizontal="@dimen/_15sdp"
+                    android:text="@string/add_network"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvLabel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+
+                    android:paddingHorizontal="@dimen/_15sdp"
+                    android:text="@string/network_name"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+                 <EditText
+                    android:id="@+id/etSSID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+
+                    android:hint="@string/enter_the_ssid"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/fontColor"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvLabel1" />
+
+                <TextView
+                    android:id="@+id/tvLabel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+
+                    android:paddingHorizontal="@dimen/_15sdp"
+                    android:text="security"
+                    android:textColor="@color/gray4"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/etSSID" />
+
+                <TextView
+                    android:id="@+id/spSecurity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="None"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/fontColor"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvLabel2" />
+
+                <LinearLayout
+                    android:id="@+id/llSecurity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:animateLayoutChanges="true"
+                    android:background="@color/white"
+                    android:divider="@drawable/divider3"
+                    android:orientation="vertical"
+                    android:showDividers="middle"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@+id/spSecurity">
+
+                    <TextView
+                        android:id="@+id/tvNone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:clickable="true"
+                        android:focusable="true"
+
+                        android:gravity="center"
+                        android:paddingVertical="1dp"
+                        android:text="@string/none"
+                        android:textColor="@color/gray3"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <TextView
+                        android:id="@+id/tvWep"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:clickable="true"
+                        android:focusable="true"
+
+                        android:gravity="center"
+                        android:paddingVertical="1dp"
+                        android:text="@string/wep"
+                        android:textColor="@color/gray3"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <TextView
+                        android:id="@+id/tvWpa"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:clickable="true"
+                        android:focusable="true"
+
+                        android:gravity="center"
+                        android:paddingVertical="1dp"
+                        android:text="@string/wpa"
+                        android:textColor="@color/gray3"
+                        android:textSize="@dimen/_14sdp" />
+
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:hintEnabled="false"
+                    app:hintAnimationEnabled="false"
+                    app:layout_constraintTop_toBottomOf="@+id/llSecurity"
+                    app:passwordToggleEnabled="true">
+
+                     <EditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/fontColor"
+                        android:textSize="@dimen/_14sdp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tvCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:paddingVertical="@dimen/_6sdp"
+                    android:text="@string/cancel"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tvSave"
+                    app:layout_constraintTop_toBottomOf="@+id/tilPassword" />
+
+                <TextView
+                    android:id="@+id/tvSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:paddingVertical="@dimen/_6sdp"
+                    android:text="save"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tilPassword" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </LinearLayout>
+    >
+
+</androidx.constraintlayout.widget.ConstraintLayout>

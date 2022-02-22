@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/sVRoot"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <TextView
+                android:id="@+id/wifiName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_17sdp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvFirstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="password"
+                    android:textColor="@color/dullBlack"
+                    android:textSize="@dimen/_17sdp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edit_network_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:paddingHorizontal="@dimen/_30sdp"
+                        android:paddingVertical="@dimen/_8sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/fontColor"
+                        android:textSize="@dimen/_20sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/do_not_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Show pass"
+                android:textSize="@dimen/_15sdp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cancelTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:text="Cancel"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                    android:id="@+id/connectTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:text="Connect"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

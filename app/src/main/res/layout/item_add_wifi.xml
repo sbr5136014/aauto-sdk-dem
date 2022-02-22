@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llAddNetwork"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:layout_marginHorizontal="@dimen/_5sdp"
+    android:layout_marginVertical="@dimen/_8sdp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/ic_add_round_light" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_3sdp"
+
+        android:includeFontPadding="false"
+        android:text="@string/add_network"
+        android:textColor="@color/gray3"
+        android:textSize="@dimen/_17sdp" />
+
+</LinearLayout>
+

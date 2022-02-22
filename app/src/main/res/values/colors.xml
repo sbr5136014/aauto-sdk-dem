@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="car_primary">#673AB7</color>
+    <color name="car_accent">#303F9F</color>
+
+    <color name="car_body1_inverted">#2196F3</color>
+    <color name="cardview_background">#FF9800</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lightPrimaryDark">#EDEAF4</color>
+    <color name="lightPurple">#B6A9D3</color>
+    <color name="lightGray">#E8E8E8</color>
+    <color name="dullBlack">#4A4A4A</color>
+    <color name="fullLightGray">#EFEDF2</color>
+    <color name="fontColor">#434246</color>
+    <color name="hintFontColor">#C1C0C0</color>
+    <color name="iconTint">#707070</color>
+    <color name="backColor">#FAFAFA</color>
+    <color name="dividerColor">#C7C7C7</color>
+    <color name="red">#C45F5B</color>
+    <color name="yellow">#ffea00</color>
+    <color name="green">#20B737</color>
+    <color name="green1">#81C784</color>
+
+    <color name="selectedTabColor">#DBD2EB</color>
+    <color name="selectedTabIconColor">#7B5BC4</color>
+    <color name="unSelectedTabColor">#EAE7EE</color>
+    <color name="unSelectedTabIconColor">#B1A5CC</color>
+
+    <color name="blue_dark">#21263D</color>
+    <color name="colorBKRND">#decfff</color>
+
+    <color name="colorTransparent">#00000000</color>
+
+    <color name="purple1">#C7BBE3</color>
+    <color name="purple2">#6D56A4</color>
+    <color name="purple3">#7A5BC3</color>
+    <color name="purple4">#D9D9D9</color>
+    <color name="purple5">#DBD3E6</color>
+    <color name="purple6">#7C5CC4</color>
+    <color name="purple7">#DFDCE6</color>
+    <color name="purple8">#C8BDE0</color>
+    <color name="purple9">#E2DEE8</color>
+    <color name="purple10">#9B99A0</color>
+    <color name="purple11">#ECEBF3</color>
+    <color name="purple15">#E6DFF0</color>
+    <color name="purple16">#D8D4DD</color>
+    <color name="purple17">#9E88D2</color>
+    <color name="purple18">#8C7B5BC4</color>
+    <color name="purple19">#6C7B5BC4</color>
+
+    <color name="gray1">#A6A6A6</color>
+    <color name="gray2">#818181</color>
+    <color name="gray3">#625F69</color>
+    <color name="gray4">#B4B4B5</color>
+    <color name="gray5">#8A8890</color>
+    <color name="gray6">#85838B</color>
+    <color name="gray7">#F1F0F2</color>
+    <color name="gray8">#838286</color>
+    <color name="gray9">#EBEBEB</color>
+    <color name="gray10">#D9D9DC</color>
+    <color name="gray11">#A2A2A2</color>
+    <color name="gray12">#CFCDD1</color>
+    <color name="gray13">#939296</color>
+    <color name="gray14">#707070</color>
+    <color name="gray15">#EFEFEF</color>
+    <color name="gray16">#7C7B7E</color>
+    <color name="gray17">#B5B4B7</color>
+    <color name="gray18">#BFBEC1</color>
+    <color name="gray19">#E8E8E8</color>
+    <color name="gray20">#EDEAF2</color>
+    <color name="gray21">#9A9A9A</color>
+    <color name="gray22">#E5E5E5</color>
+    <color name="gray23">#5353532B</color>
+    <color name="gray24">#BABABA</color>
+    <color name="gray25">#959595</color>
+    <color name="gray26">#A5A5A5</color>
+
+    <color name="textDisabled">#D2CBE2</color>
+</resources>

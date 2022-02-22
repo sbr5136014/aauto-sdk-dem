@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BatteryMeterView">
+        <attr name="charging" format="boolean" />
+        <attr name="warning_level" format="integer" />
+        <attr name="battery_level" format="integer" />
+        <attr name="background_corner_radius" format="float" />
+        <attr name="battery_level_corner_radius" format="float" />
+        <attr name="normal_fill_color" format="color" />
+        <attr name="warning_fill_color" format="color" />
+        <attr name="background_fill_color" format="color" />
+        <attr name="background_stroke_color" format="color" />
+        <attr name="background_stroke_width" format="float" />
+        <attr name="battery_head_color" format="color" />
+        <attr name="charging_color" format="color" />
+        <attr name="charging_logo_padding" format="integer" /> <!--Conversely-->
+        <attr name="text_color" format="color" />
+        <attr name="charging_level_text" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SegmentControlView">
+        <attr name="segmentEntries" format="reference|integer" />
+        <attr name="segmentTextSize" format="dimension|reference" />
+        <attr name="segmentSelectedTextColor" format="color" />
+        <attr name="segmentUnSelectedTextColor" format="color" />
+        <attr name="segmentSelectedBackground" format="integer" />
+        <attr name="segmentUnSelectedBackground" format="integer" />
+    </declare-styleable>
+</resources>
