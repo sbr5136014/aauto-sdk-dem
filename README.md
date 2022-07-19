@@ -7,7 +7,7 @@ A demo application for ``SBR``.
 Well, you probably need to enable _unknown sources_ in Android Auto
 developer settings, see [the official documentation](https://developer.android.com/training/auto/testing/index.html).
 
-## Screenshots
+## Screenshots;
 
 ![screenshot](media/screenshot1.png)
 ![screenshot](media/screenshot2.png)
