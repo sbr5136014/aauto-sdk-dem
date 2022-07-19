@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:background="@drawable/bt_list_bg"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:layout_height="match_parent">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:id="@+id/contact_refresh"
+			android:gravity="center_vertical"
+			android:layout_height="90px">
+			<ImageView
+				android:layout_width="31px"
+				android:layout_height="31px"
+				android:layout_marginLeft="26px"
+				android:src="@drawable/select_refresh"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="15px"
+				android:textSize="24px"
+				android:textColor="@color/btcolor1"
+				android:text="@string/string7"/>
+		</LinearLayout>
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<com.nforetek.bt.phone.tools.RecyclerViewForEmpty
+				android:id="@+id/recyclerview"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"/>
+			<com.nforetek.bt.phone.tools.WaveSideBar
+				android:layout_width="match_parent"
+				android:id="@+id/sidebar"
+				android:layout_gravity="center_vertical"
+				android:layout_height="639px" />
+
+		</RelativeLayout>
+	</LinearLayout>
+
+
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:id="@+id/contacts_empty"
+		android:visibility="gone"
+		android:background="@color/fafbfc"
+		android:layout_height="match_parent">
+
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_centerInParent="true"
+			android:id="@+id/contacts_empty_no_loading"
+			android:layout_height="75px">
+			<ImageView
+				android:layout_width="42px"
+				android:layout_height="42px"
+				android:id="@+id/contacts_empty_refresh"
+				android:scaleType="center"
+				android:layout_centerVertical="true"
+				android:layout_alignParentLeft="true"
+				android:src="@drawable/select_refresh"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@id/contacts_empty_refresh"
+				android:layout_marginLeft="40px"
+				android:textSize="26px"
+				android:layout_alignParentTop="true"
+				android:textColor="@color/color_nor"
+				android:text="@string/string16"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@id/contacts_empty_refresh"
+				android:layout_marginLeft="40px"
+				android:textSize="26px"
+				android:layout_alignParentBottom="true"
+				android:textColor="@color/color_nor"
+				android:text="@string/string5"/>
+		</RelativeLayout>
+
+	</RelativeLayout>
+
+</RelativeLayout>

@@ -3,6 +3,6 @@
     <string-array name="dynamicValue" />
     <string-array name="action_on_off">
         <item>ON</item>
-        <item>כבוי</item>
+        <item>Off</item>
     </string-array>
 </resources>

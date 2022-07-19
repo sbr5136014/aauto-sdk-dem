@@ -3,6 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/sbr/AndroidStudioProjects/aauto-sdk-dem/app/src/main/res/drawable/anination_call_btn.xml" value="0.294" />
+        <entry key="..\:/Users/sbr/AndroidStudioProjects/aauto-sdk-dem/app/src/main/res/drawable/bg_pressed_key.xml" value="0.196" />
+        <entry key="..\:/Users/sbr/AndroidStudioProjects/aauto-sdk-dem/app/src/main/res/drawable/bg_square_corner_for_next_btn.xml" value="0.196" />
+        <entry key="..\:/Users/sbr/AndroidStudioProjects/aauto-sdk-dem/app/src/main/res/drawable/ic_location.xml" value="0.196" />
+        <entry key="..\:/Users/sbr/AndroidStudioProjects/aauto-sdk-dem/app/src/main/res/drawable/ic_next.xml" value="0.196" />
+        <entry key="..\:/Users/sbr/AndroidStudioProjects/aauto-sdk-dem/app/src/main/res/layout-keyssoft/keyboard.xml" value="0.33" />
+        <entry key="..\:/Users/sbr/AndroidStudioProjects/aauto-sdk-dem/app/src/main/res/layout/activity_btphone_main.xml" value="0.4257907542579075" />
+        <entry key="..\:/Users/sbr/AndroidStudioProjects/aauto-sdk-dem/app/src/main/res/layout/activity_wifi.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/sbr/AndroidStudioProjects/aauto-sdk-dem/app/src/main/res/layout/dialog_add_network.xml" value="0.4282238442822384" />
+        <entry key="..\:/Users/sbr/AndroidStudioProjects/aauto-sdk-dem/app/src/main/res/layout/fragment_page1.xml" value="0.22201946472019465" />
+        <entry key="..\:/Users/sbr/AndroidStudioProjects/aauto-sdk-dem/app/src/main/res/layout/item_add_wifi.xml" value="0.4282238442822384" />
+        <entry key="..\:/Users/sbr/AndroidStudioProjects/aauto-sdk-dem/app/src/main/res/layout/item_wifi.xml" value="0.4282238442822384" />
+        <entry key="..\:/Users/sbr/AndroidStudioProjects/aauto-sdk-dem/app/src/main/res/layout/keyboardfragment.xml" value="0.22201946472019465" />
+        <entry key="..\:/Users/sbr/AndroidStudioProjects/aauto-sdk-dem/app/src/main/res/layout/pass_dialog.xml" value="0.5" />
         <entry key="..\:/Users/sbr/AndroidStudioProjects/aauto-sdk-demo/app/src/main/res/layout/activity_car_main.xml" value="0.14722222222222223" />
         <entry key="..\:/Users/sbr/AndroidStudioProjects/aauto-sdk-demo/app/src/main/res/layout/fragment_demo.xml" value="0.358695652173913" />
         <entry key="..\:/Users/sbr/AndroidStudioProjects/aauto-sdk-demo/app/src/main/res/layout/fragment_log.xml" value="0.625" />

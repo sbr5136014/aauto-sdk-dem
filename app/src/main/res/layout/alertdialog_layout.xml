@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="640px"
+    android:background="@drawable/popup_bg"
+    android:layout_height="340px">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="237px">
+
+        <RelativeLayout
+            android:layout_width="450px"
+            android:layout_centerInParent="true"
+            android:layout_height="79px">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="28px"
+                    android:textColor="@color/btcolor7"
+                    android:text="@string/string8"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="28px"
+                    android:id="@+id/alert_bt_name"
+                    android:textColor="@color/btcolor7"
+                    android:text=""
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/btcolor8"
+                android:textSize="20px"
+                android:text="@string/string9"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <LinearLayout
+        android:layout_width="640px"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="101px">
+        <Button
+            android:layout_width="319px"
+            android:text="@string/string10"
+            android:textSize="28px"
+            android:background="@drawable/selector_comfir"
+            android:id="@+id/alert_bt_disconnect"
+            android:textColor="@color/tab_selected"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+        <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_marginBottom="10px"-->
+            <!--android:background="#ccc"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginTop="10px"/>-->
+        <TextView
+            android:layout_width="319px"
+            android:text="@string/string11"
+            android:id="@+id/alert_bt_cancel"
+            android:background="@drawable/selector_comfir_right"
+            android:textColor="@color/btcolor9"
+            android:textSize="28px"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

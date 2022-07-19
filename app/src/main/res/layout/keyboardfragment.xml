@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/m_dial"
+    android:layout_width="501px"
+    android:layout_height="639px"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+
+    <RelativeLayout
+        android:id="@+id/keyline01_03"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keyboard_height">
+
+        <RelativeLayout
+            android:id="@+id/number01"
+            android:layout_width="@dimen/keyboard_width"
+            android:layout_height="@dimen/keyboard_height"
+            android:background="@drawable/num_dianji">
+
+            <TextView
+                android:id="@+id/keyboard_one"
+                style="@style/Radio_button_first_style"
+                android:text="1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/number02"
+            android:layout_width="@dimen/keyboard_width"
+            android:layout_height="@dimen/keyboard_height"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/num_dianji">
+
+            <TextView
+                android:id="@+id/keyboard_two"
+                style="@style/Radio_button_first_style"
+                android:text="2" />
+
+            <TextView
+                style="@style/Radio_button_second_style"
+                android:text="ABC" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/number03"
+            android:layout_width="@dimen/keyboard_width"
+            android:layout_height="@dimen/keyboard_height"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/num_dianji">
+
+            <TextView
+                android:id="@+id/keyboard_three"
+                style="@style/Radio_button_first_style"
+                android:text="3" />
+
+            <TextView
+                style="@style/Radio_button_second_style"
+                android:text="DEF" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/keyline04_06"
+        android:layout_width="match_parent"
+        android:layout_marginTop="18px"
+        android:layout_height="@dimen/keyboard_height"
+        android:layout_below="@id/keyline01_03">
+
+        <RelativeLayout
+            android:id="@+id/number04"
+            android:layout_width="@dimen/keyboard_width"
+            android:layout_height="@dimen/keyboard_height"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/num_dianji">
+
+            <TextView
+                android:id="@+id/keyboard_four"
+                style="@style/Radio_button_first_style"
+                android:text="4" />
+
+            <TextView
+                style="@style/Radio_button_second_style"
+                android:text="GHI" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/number05"
+            android:layout_width="@dimen/keyboard_width"
+            android:layout_height="@dimen/keyboard_height"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/num_dianji">
+
+            <TextView
+                android:id="@+id/keyboard_five"
+                style="@style/Radio_button_first_style"
+                android:text="5" />
+
+            <TextView
+                style="@style/Radio_button_second_style"
+                android:text="JKL" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/number06"
+            android:layout_width="@dimen/keyboard_width"
+            android:layout_height="@dimen/keyboard_height"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/num_dianji">
+
+            <TextView
+                android:id="@+id/keyboard_six"
+                style="@style/Radio_button_first_style"
+                android:text="6" />
+
+            <TextView
+                style="@style/Radio_button_second_style"
+                android:text="MNO" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/keyline07_09"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keyboard_height"
+        android:layout_marginTop="18px"
+        android:layout_below="@+id/keyline04_06">
+
+        <RelativeLayout
+            android:id="@+id/number07"
+            android:layout_width="@dimen/keyboard_width"
+            android:layout_height="@dimen/keyboard_height"
+            android:background="@drawable/num_dianji">
+
+            <TextView
+                android:id="@+id/keyboard_seven"
+                style="@style/Radio_button_first_style"
+                android:text="7" />
+
+            <TextView
+                style="@style/Radio_button_second_style"
+                android:text="PQRS" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/number08"
+            android:layout_width="@dimen/keyboard_width"
+            android:layout_height="@dimen/keyboard_height"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/num_dianji">
+
+            <TextView
+                android:id="@+id/keyboard_eight"
+                style="@style/Radio_button_first_style"
+                android:text="8" />
+
+            <TextView
+                style="@style/Radio_button_second_style"
+                android:text="TUV" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/number09"
+            android:layout_width="@dimen/keyboard_width"
+            android:layout_height="@dimen/keyboard_height"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/num_dianji">
+
+            <TextView
+                android:id="@+id/keyboard_nine"
+                style="@style/Radio_button_first_style"
+                android:text="9" />
+
+            <TextView
+                style="@style/Radio_button_second_style"
+                android:text="WXYZ" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/keyline0xingjin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keyboard_height"
+        android:layout_marginTop="18px"
+        android:layout_below="@+id/keyline07_09">
+
+        <RelativeLayout
+            android:id="@+id/numberxinghao"
+            android:layout_width="@dimen/keyboard_width"
+            android:layout_height="@dimen/keyboard_height"
+            android:background="@drawable/num_dianji">
+
+            <TextView
+                android:id="@+id/keyboard_asterisk"
+                style="@style/Radio_button_three_style"
+                android:layout_centerVertical="true"
+                android:paddingTop="10px"
+                android:text="*" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/keyboard_dou"-->
+                <!--style="@style/Radio_button_second_style"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:text="," />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/number00"
+            android:layout_width="@dimen/keyboard_width"
+            android:layout_height="@dimen/keyboard_height"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/num_dianji">
+
+            <TextView
+                android:id="@+id/keyboard_zero"
+                style="@style/Radio_button_first_style"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/keyboard_add"
+                style="@style/Radio_button_second_style"
+                android:text="+" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/numberjinhao"
+            android:layout_width="@dimen/keyboard_width"
+            android:layout_height="@dimen/keyboard_height"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/num_dianji">
+
+            <TextView
+                android:id="@+id/keyboard_pound"
+                style="@style/Radio_button_three_style"
+                android:layout_centerVertical="true"
+                android:text="#" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/keyboard_fen"-->
+                <!--style="@style/Radio_button_second_style"-->
+                <!--android:text=";" />-->
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keyboard_height"
+        android:layout_marginTop="35px"
+        android:layout_below="@+id/keyline0xingjin">
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/keyboard_width"
+            android:layout_height="@dimen/keyboard_height"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/keyboard_call"
+                android:layout_width="@dimen/keyboard_width"
+                android:layout_height="@dimen/keyboard_height"
+                android:background="@drawable/key_call" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/keyboard_width"
+            android:layout_height="@dimen/keyboard_height"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/keyboard_delete"
+                android:layout_width="110px"
+                android:layout_centerInParent="true"
+                android:scaleType="center"
+                android:layout_height="110px"
+                android:src="@drawable/key_detele" />
+            <!--<ImageView-->
+                <!--android:id="@+id/keyboard_delete"-->
+                <!--android:layout_width="@dimen/keyboard_width"-->
+                <!--android:layout_height="@dimen/keyboard_height"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@drawable/key_detele"/>-->
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
+

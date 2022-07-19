@@ -1,0 +1,222 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="60px"
+    android:background="@color/fafbfc"
+    android:orientation="horizontal">
+    <!--蓝牙已连接
+       android:background="@drawable/right_bt_big_white_bg" -->
+    <LinearLayout
+        android:layout_width="1360px"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:background="@drawable/right_big_white_bg"
+        android:id="@+id/main_bt_connected"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="881px"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="46px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/device_name"
+                    android:textSize="24px"
+                    android:id="@+id/main_device_name"
+                    android:layout_gravity="center_vertical"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/main_disconnect"
+                    android:layout_width="31px"
+                    android:layout_height="31px"
+                    android:layout_marginLeft="18px"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bt_btn_disconnect_n" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="155px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editnum_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/shape_board"
+                    android:maxLength="20"
+                    android:paddingRight="26dp"
+                    android:singleLine="true"
+                    android:textColor="@color/btcolor15"
+                    android:textCursorDrawable="@null"
+                    android:textSize="50px" />
+            </LinearLayout>
+
+            <include layout="@layout/keyboardfragment" />
+
+        </LinearLayout>
+        <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:background="#ccc"-->
+            <!--android:layout_height="match_parent"/>-->
+
+        <RelativeLayout
+            android:layout_width="479px"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="479px"
+                android:layout_height="match_parent"
+                android:id="@+id/main_fragment"
+                android:orientation="vertical">
+                <!---->
+                <RadioGroup
+                    android:id="@+id/main_tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:background="@drawable/list_title_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp">
+
+                    <RadioButton
+                        android:id="@+id/tab_records"
+                        style="@style/AppTheme"
+                        android:background="@drawable/select_call"
+                        android:paddingBottom="10px"
+                        android:checked="true"
+                        android:text="@string/string3"/>
+
+                    <RelativeLayout
+                        android:layout_width="99px"
+                        android:layout_height="match_parent">
+
+
+                    </RelativeLayout>
+
+
+                    <RadioButton
+                        android:id="@+id/tab_contact"
+                        style="@style/AppTheme"
+                        android:paddingBottom="10px"
+                        android:background="@drawable/select_book"
+                        android:text="@string/string4"/>
+
+                </RadioGroup>
+                <FrameLayout
+                    android:id="@+id/main_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </FrameLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/empty_loading"
+                    android:visibility="gone"
+                    android:background="@color/fafbfc"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_height="64px">
+                        <ImageView
+                            android:layout_width="64px"
+                            android:layout_height="match_parent"
+                            android:id="@+id/empty_refresh_icon"
+                            android:scaleType="center"
+                            android:src="@drawable/icon_loading"
+                            android:layout_alignParentLeft="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/empty_refresh_icon"
+                            android:layout_marginLeft="15px"
+                            android:textSize="26px"
+                            android:layout_centerVertical="true"
+                            android:text="@string/string6"
+                            android:textColor="@color/color_nor"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="479px"
+                android:orientation="vertical"
+                android:id="@+id/main_fit"
+                android:visibility="gone"
+                android:background="@color/fafbfc"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/main_recycler"
+                    android:scrollbars="vertical"
+                    android:layout_height="match_parent">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </RelativeLayout>
+        <!--
+                    android:scrollbars="vertical"
+                    app:fastScrollEnabled="true"
+                    app:fastScrollVerticalThumbDrawable="@drawable/select_scroller"
+                    app:fastScrollVerticalTrackDrawable="@drawable/shape_scroller_bg"-->
+
+    </LinearLayout>
+    <!--蓝牙未连接-->
+    <RelativeLayout
+        android:layout_width="1360px"
+        android:id="@+id/main_bt_disconnect"
+        android:visibility="visible"
+        android:background="@drawable/right_big_white_bg"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="196px"
+            android:text="@string/string1"
+            android:textColor="@color/btcolor1"
+            android:id="@+id/main_disconnect_tip"
+            android:textSize="26px"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="160px"
+            android:src="@drawable/device_image_usb"
+            android:layout_below="@id/main_disconnect_tip"
+            android:id="@+id/main_disconnect_icon"
+            android:layout_marginTop="87px"
+            android:layout_centerHorizontal="true"
+            android:layout_height="172px" />
+        <Button
+            android:layout_width="204px"
+            android:gravity="center"
+            android:textSize="24px"
+            android:text="@string/string2"
+            android:id="@+id/main_disconnect_toconnect"
+            android:background="@drawable/select_main_to_connect"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/main_disconnect_icon"
+            android:layout_marginTop="101px"
+            android:textColor="@color/btcolor2"
+            android:layout_height="64px" />
+    </RelativeLayout>
+    <navi.adayo.com.navicommonui.SimpleAmap
+        android:layout_width="560px"
+        android:id="@+id/main_map"
+        android:layout_height="match_parent">
+    </navi.adayo.com.navicommonui.SimpleAmap>
+
+</LinearLayout>

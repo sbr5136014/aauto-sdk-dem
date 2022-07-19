@@ -1,14 +1,23 @@
+
+
+
 package com.github.martoreto.aademo;
+
+import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
+import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.inputmethodservice.KeyboardView;
 import android.net.wifi.ScanResult;
 import android.net.wifi.SupplicantState;
 import android.net.wifi.WifiConfiguration;
@@ -22,6 +31,8 @@ import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
@@ -34,12 +45,15 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.PopupWindow;
 import android.widget.RadioButton;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -51,6 +65,8 @@ import com.google.android.apps.auto.sdk.MenuController;
 import com.google.android.apps.auto.sdk.MenuItem;
 import com.google.android.apps.auto.sdk.StatusBarController;
 import com.google.android.apps.auto.sdk.notification.CarNotificationExtender;
+import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.firestore.util.Util;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -59,6 +75,13 @@ import java.util.List;
 
 public class wifiSettingsActivity extends CarActivity implements WifiAndBatteryInfo, WifiListAdapter.ClickInterface, View.OnClickListener {
     View inPassLay;
+    //     private final AddNetworkDialog.OnClick onClick;
+    private EditText etSSID, etPassword;
+    private TextView spSecurity, tvNone, tvWep, tvWpa;
+    private PopupWindow popUp;
+    private TextView tvSave, tvCancel;
+    private LinearLayout llSecurity;
+    private TextInputLayout tilPassword;
     private RecyclerView rvWifi;
     private WifiListAdapter wifiListAdapter;
     private ArrayList<WifiListModel> wifiList;
@@ -69,6 +92,8 @@ public class wifiSettingsActivity extends CarActivity implements WifiAndBatteryI
     public WifiManager mWifiManager;
     private boolean isWifiEnabled;
     public boolean isScanning = false;
+    TextView wp1;
+    Button a,b ,c,d,e,f,i,j,k,l,l1,m,n,o,p,q,r,s,t,u,v0,w,x,y,z,g,h,m1,m2,SHIFT,del;
 
     BroadcastReceiver mWifiScanReceiver = new BroadcastReceiver() {
         @Override
@@ -178,6 +203,9 @@ public class wifiSettingsActivity extends CarActivity implements WifiAndBatteryI
         } else {
             rsWifiOnOff.setSelection("OFF");
         }
+
+
+
     }
 
     public boolean wifiEnabled() {
@@ -476,6 +504,8 @@ public class wifiSettingsActivity extends CarActivity implements WifiAndBatteryI
     }
 
     public void PasswordDialog(WifiListModel wifiListModel) {
+
+
         inPassLay.setVisibility(View.VISIBLE);
 
         TextView wifiName, cancelTxt, connectTxt;
@@ -486,9 +516,104 @@ public class wifiSettingsActivity extends CarActivity implements WifiAndBatteryI
         cancelTxt = inPassLay.findViewById(R.id.cancelTxt);
         connectTxt = inPassLay.findViewById(R.id.connectTxt);
         wifiName = inPassLay.findViewById(R.id.wifiName);
+        q = inPassLay.findViewById(R.id.q);
+       w = inPassLay.findViewById(R.id.w);
+        e = inPassLay.findViewById(R.id.e);
+        r = inPassLay.findViewById(R.id.r);
+        t = inPassLay.findViewById(R.id.t);
+        y = inPassLay.findViewById(R.id.y);
+        u = inPassLay.findViewById(R.id.u);
+        i = inPassLay.findViewById(R.id.i);
+        o = inPassLay.findViewById(R.id.o);
+        p = inPassLay.findViewById(R.id.p);
+        a = inPassLay.findViewById(R.id.a);
+        s = inPassLay.findViewById(R.id.s);
+        d = inPassLay.findViewById(R.id.d);
+        f = inPassLay.findViewById(R.id.f);
+        g = inPassLay.findViewById(R.id.g);
+        h = inPassLay.findViewById(R.id.h);
+        j = inPassLay.findViewById(R.id.j);
+        k = inPassLay.findViewById(R.id.k);
+        l = inPassLay.findViewById(R.id.l);
+        l1 = inPassLay.findViewById(R.id.l);
+        z = inPassLay.findViewById(R.id.z);
+        x = inPassLay.findViewById(R.id.x);
+        c = inPassLay.findViewById(R.id.c);
+        v0 = inPassLay.findViewById(R.id.v);
+        b = inPassLay.findViewById(R.id.b);
+        n = inPassLay.findViewById(R.id.n);
+        m = inPassLay.findViewById(R.id.m);
+        m1 = inPassLay.findViewById(R.id.m1);
+        m2= inPassLay.findViewById(R.id.m2);
+        del= inPassLay.findViewById(R.id.del);
+        SHIFT= inPassLay.findViewById(R.id.shift);
         wifiName.setText(wifiListModel.getSSID());
         EditText edtPassword = inPassLay.findViewById(R.id.edit_network_password);
         CheckBox showPassword = inPassLay.findViewById(R.id.do_not_show);
+        q.setOnClickListener(onclick);
+        w.setOnClickListener(onclick);
+        e.setOnClickListener(onclick);
+        r.setOnClickListener(onclick);
+        t.setOnClickListener(onclick);
+        y.setOnClickListener(onclick);
+        u.setOnClickListener(onclick);
+        i.setOnClickListener(onclick);
+        o.setOnClickListener(onclick);
+        p.setOnClickListener(onclick);
+        l.setOnClickListener(onclick);
+        l1.setOnClickListener(onclick);
+        k.setOnClickListener(onclick);
+        h.setOnClickListener(onclick);
+        g.setOnClickListener(onclick);
+        j.setOnClickListener(onclick);
+        f.setOnClickListener(onclick);
+        d.setOnClickListener(onclick);
+        s.setOnClickListener(onclick);
+        a.setOnClickListener(onclick);
+        m.setOnClickListener(onclick);
+        n.setOnClickListener(onclick);
+        f.setOnClickListener(onclick);
+        b.setOnClickListener(onclick);
+        v0.setOnClickListener(onclick);
+        c.setOnClickListener(onclick);
+        x.setOnClickListener(onclick);
+        z.setOnClickListener(onclick);
+        e.setOnClickListener(onclick);
+        m1.setOnClickListener(onclick);
+        m2.setOnClickListener(onclick);
+
+
+      
+        
+        
+        SHIFT.setOnClickListener(onclickm);
+        del.setOnClickListener(onclickm);
+//        View.OnClickListener mCorkyListener = new OnClickListener() {
+//
+//        };
+//
+//        q.setOnClickListener(new View.OnClickListener(){
+//
+//        });
+
+        final int INPUT_TYPE_DEFAULT;
+
+
+        edtPassword.setOnFocusChangeListener((view, hasFocus) -> {
+            if (hasFocus) {
+
+                final Dialog dialog = new Dialog(getApplicationContext()); // Context, this, etc.
+                dialog.setContentView(R.layout.keyboard);
+                dialog.setTitle("Keyboard");
+                dialog.show();
+
+                CarToast.makeText(this, "Got the focus", Toast.LENGTH_LONG).show();
+            } else {
+                CarToast.makeText(getApplicationContext(), "Lost the focus", Toast.LENGTH_LONG).show();
+
+            }
+
+        });
 
         edtPassword.setText("");
         setEvents(edtPassword, sVRoot, clPassword);
@@ -505,15 +630,20 @@ public class wifiSettingsActivity extends CarActivity implements WifiAndBatteryI
         cancelTxt.setOnClickListener(view -> inPassLay.setVisibility(View.GONE));
         showPassword.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (!isChecked) {
+
                 // hide password
                 edtPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
                 edtPassword.setSelection(edtPassword.getText().length());
             } else {
+//                showDialog(findViewById(R.id.clRoot));
+//                CarToast.makeText(this, "Got the focus", Toast.LENGTH_LONG).show();
                 // show password
+
                 edtPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
                 edtPassword.setSelection(edtPassword.getText().length());
             }
         });
+
     }
 
     private void setEvents(EditText edtPassword, ScrollView sVRoot, ConstraintLayout clPassword) {
@@ -566,6 +696,83 @@ public class wifiSettingsActivity extends CarActivity implements WifiAndBatteryI
             clearWifiList();
         }
     }
+//public void onclick(View view)
+    // Create an anonymous implementation of OnClickListener
+    private View.OnClickListener onclick = new View.OnClickListener() {
+        public void onClick(View v) {
+
+            String BB = ((Button) findViewById(v.getId())).getText().toString();
+            EditText etPassword = inPassLay.findViewById(R.id.edit_network_password);
+            etPassword.setText(etPassword.getText()+BB);//etPassword.getText()+
+            CarToast.makeText(getApplicationContext(),BB+"",Toast.LENGTH_SHORT).show();
+            // do something when the button is clicked 
+            // Yes we will handle click here but which button clicked??? We don't know
+
+        };
+    public void onclick(View v) {
+        String BB = ((Button) findViewById(v.getId())).getText().toString();
+        CarToast.makeText(getBaseContext(),BB+"",Toast.LENGTH_SHORT).show();
+        // do something when the button is clicked
+        // Yes we will handle click here but which button clicked??? We don't know
+
+    };
+    };
+    private View.OnClickListener onclickm = new View.OnClickListener() {
+        public void onClick(View v) {
+            String BB = ((Button) findViewById(v.getId())).getText().toString();
+            String RR = ((Button) findViewById(v.getId())).getText().toString();
+
+            switch (BB) {
+                case "SHIFT":
+
+
+            }
+            q.setText(RR);
+            w.setText(RR);
+            e.setText(RR);
+            r.setText(RR);
+            t.setText(RR);
+            y.setText(RR);
+            u.setText(RR);
+            i.setText(RR);
+            o.setText(RR);
+            p.setText(RR);
+            l.setText(RR);
+            l1.setText(RR);
+            k.setText(RR);
+            h.setText(RR);
+            g.setText(RR);
+            j.setText(RR);
+            f.setText(RR);
+            d.setText(RR);
+            s.setText(RR);
+            a.setText(RR);
+            m.setText(RR);
+            n.setText(RR);
+            f.setText(RR);
+            b.setText(RR);
+            v0.setText(RR);
+            c.setText(RR);
+            x.setText(RR);
+            z.setText(RR);
+            e.setText(RR);
+            m1.setText(RR);
+            m2.setText(RR);
+            EditText etPassword = inPassLay.findViewById(R.id.edit_network_password);
+            etPassword.setText(etPassword.getText()+BB);//etPassword.getText()+
+            CarToast.makeText(getApplicationContext(),BB+"",Toast.LENGTH_SHORT).show();
+            // do something when the button is clicked
+            // Yes we will handle click here but which button clicked??? We don't know
+
+        };
+        public void onclick(View v) {
+            String BB = ((Button) findViewById(v.getId())).getText().toString();
+            CarToast.makeText(getBaseContext(),BB+"",Toast.LENGTH_SHORT).show();
+            // do something when the button is clicked
+            // Yes we will handle click here but which button clicked??? We don't know
+
+        };
+    };
 
     private void clearWifiList() {
         if (wifiList != null) {
@@ -599,8 +806,16 @@ public class wifiSettingsActivity extends CarActivity implements WifiAndBatteryI
     }
 
 
+
+public void kb(View v){
+    CarToast.makeText(this,"ughylihg",Toast.LENGTH_SHORT).show();
+
+}
     @Override
     public void onClick(View view) {
+        CarToast.makeText(this,"ughylihg",Toast.LENGTH_SHORT).show();
+
+//        String ida = view.getId().
         switch (view.getId()) {
             case R.id.imvRefresh:
                 if (rsWifiOnOff.getSelection(getResources().getString(R.string.on))) {
@@ -620,6 +835,86 @@ public class wifiSettingsActivity extends CarActivity implements WifiAndBatteryI
         imvRefresh.startAnimation(rotate);
     }
 
+    public void showDialog(View rootView) {
+        if (rootView != null) {
+            LayoutInflater inflater = LayoutInflater.from(this);
+            View mView = inflater.inflate(R.layout.keyboard, null, true);
+            popUp = new PopupWindow(mView, MATCH_PARENT, rootView.getHeight(), false);
+
+            popUp.setOutsideTouchable(true);
+            popUp.setElevation(20);
+            wp1 = (TextView) mView.findViewById(R.id.wp);
+
+//
+//            w = (TextView) mView.findViewById(R.id.w);
+//            e = (TextView) mView.findViewById(R.id.e);
+//            r = (TextView) mView.findViewById(R.id.r);
+//            q = (TextView) mView.findViewById(R.id.q);
+//            t = (TextView) mView.findViewById(R.id.t);
+            q.setOnClickListener(V -> {
+                wp1.setText(wp1.getText()+"q");
+                CarToast.makeText(getApplicationContext(), "Got the focus", Toast.LENGTH_LONG).show();
+
+            });
+            w.setOnClickListener(q -> {
+                wp1.setText(wp1.getText()+"w");
+                popUp.dismiss();
+                CarToast.makeText(getApplicationContext(), "tsgrhys", Toast.LENGTH_LONG).show();
+
+            });
+            t.setOnClickListener(q -> {
+                wp1.setText(wp1.getText()+"t");
+                popUp.dismiss();
+                CarToast.makeText(getApplicationContext(), "tsgrhys", Toast.LENGTH_LONG).show();
+
+            });
+            e.setOnClickListener(q -> wp1.setText(wp1.getText()+"e"));
+            r.setOnClickListener(q -> wp1.setText(wp1.getText()+"r"));
+
+
+
+//            spSecurity.setOnClickListener(view -> {
+//                if (llSecurity.getVisibility() == View.VISIBLE) {
+//                    llSecurity.setVisibility(View.GONE);
+//                } else {
+//                    llSecurity.setVisibility(View.VISIBLE);
+//                }
+//            });
+//            tvNone.setOnClickListener(view -> {
+//                spSecurity.setText(tvNone.getText());
+//                llSecurity.setVisibility(View.GONE);
+//                tilPassword.setVisibility(View.GONE);
+//            });
+//            tvWep.setOnClickListener(view -> {
+//                spSecurity.setText(tvWep.getText());
+//                llSecurity.setVisibility(View.GONE);
+//                tilPassword.setVisibility(View.VISIBLE);
+//            });
+//            tvWpa.setOnClickListener(view -> {
+//                spSecurity.setText(tvWpa.getText());
+//                llSecurity.setVisibility(View.GONE);
+//                tilPassword.setVisibility(View.VISIBLE);
+//            });
+//
+//            tvSave.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//
+//                }
+//            });
+
+
+           /* popUp.setOnDismissListener(() -> {
+                BaseActivity.setCurrentViewForPopUp(null);
+            });*/
+
+            int topSpace = (int) Utilities.convertDpToPixel(15, getApplicationContext()); //Top Header space
+            popUp.showAtLocation(rootView, Gravity.TOP, 0, topSpace);
+
+        }
+
+    }
+
     @Override
     public void onDestroy() {
         super.onDestroy();
@@ -635,5 +930,9 @@ public class wifiSettingsActivity extends CarActivity implements WifiAndBatteryI
         unregisterReceiver(mWifiScanReceiver);
         unregisterReceiver(wifiOnOffReceiver);
     }
+
+//     @Override
+//     public void onClick(View view) {
+//    }
 
 }

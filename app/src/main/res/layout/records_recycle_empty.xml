@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="90px">
+        <Button
+            android:layout_width="90px"
+            android:layout_height="match_parent"
+            android:id="@+id/empty_refresh"
+            android:layout_alignParentLeft="true"
+
+            android:background="@drawable/select_refresh"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/empty_refresh"
+            android:layout_marginLeft="15px"
+            android:textSize="26px"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8px"
+            android:textColor="@color/color_nor"
+            android:text="@string/string16"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/empty_refresh"
+            android:layout_marginLeft="15px"
+            android:textSize="26px"
+            android:layout_marginBottom="8px"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/color_nor"
+            android:text="@string/string5"/>
+    </RelativeLayout>
+</RelativeLayout>

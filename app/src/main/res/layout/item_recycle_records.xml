@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/irr_item"
+    android:background="@drawable/selector_item_pressed"
+    android:importantForAccessibility="no"
+    android:layout_height="90px">
+    <!--android:background="@drawable/selector_item_pressed"-->
+    <ImageView
+        android:layout_width="27px"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="26px"
+        android:id="@+id/irr_img"
+        android:layout_centerVertical="true"
+        android:src="@drawable/bt_list_ic_call"
+        android:layout_height="28px" />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/irr_name"
+        android:text=""
+        android:width="200px"
+        android:singleLine="true"
+        android:textSize="26px"
+        android:importantForAccessibility="no"
+        android:layout_toRightOf="@id/irr_img"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20px"
+        android:textColor="@color/btcolor12"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/irr_time"
+        android:text=""
+        android:importantForAccessibility="no"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="22px"
+        android:textSize="22px"
+        android:textColor="@color/btcolor14"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

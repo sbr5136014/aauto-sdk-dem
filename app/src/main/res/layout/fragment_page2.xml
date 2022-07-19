@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bt_list_bg"
+    android:orientation="vertical">
+<!--
+    android:background="@color/fafbfc"-->
+    <com.nforetek.bt.phone.tools.RecyclerViewForEmpty
+        android:id="@+id/records_recycle"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:layout_height="match_parent">
+
+    </com.nforetek.bt.phone.tools.RecyclerViewForEmpty>
+    <!--
+        app:fastScrollEnabled="true"
+        app:fastScrollVerticalThumbDrawable="@drawable/select_scroller"
+        app:fastScrollVerticalTrackDrawable="@drawable/shape_scroller_bg"-->
+
+    <RelativeLayout
+        android:id="@+id/records_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fafbfc"
+        android:visibility="gone">
+
+
+        <RelativeLayout
+            android:id="@+id/empty_no_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="75px"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/empty_refresh"
+                android:layout_width="42px"
+                android:layout_height="42px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@drawable/select_refresh" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="40px"
+                android:layout_toRightOf="@id/empty_refresh"
+                android:text="@string/string16"
+                android:textColor="@color/color_nor"
+                android:textSize="26px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="40px"
+                android:layout_toRightOf="@id/empty_refresh"
+                android:text="@string/string5"
+                android:textColor="@color/color_nor"
+                android:textSize="26px" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

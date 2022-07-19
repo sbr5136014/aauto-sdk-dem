@@ -55,6 +55,7 @@ public class MainCarActivity extends CarActivity {
    public WifiManager mWifiManager;
    public ListView list;
 
+
     private String mCurrentFragmentTag;
     private Handler mHandler = new Handler();
    private final BroadcastReceiver mWifiScanReceiver = new BroadcastReceiver() {
@@ -320,4 +321,6 @@ public class MainCarActivity extends CarActivity {
             }
         }, 5000);
     }
+
+
 }

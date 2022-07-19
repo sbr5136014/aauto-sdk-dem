@@ -13,4 +13,85 @@
     <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
         <item name="colorAccent">@color/lightPurple</item>
     </style>
+
+    <style name="Radio_button_first_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/btcolor16</item>
+        <item name="android:textSize">50px</item>
+        <item name="android:layout_marginTop">8px</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+    <style name="Radio_button_three_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/btcolor16</item>
+        <item name="android:textSize">50px</item>
+    </style>
+
+    <style name="Radio_button_second_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/btcolor17</item>
+        <item name="android:textSize">20px</item>
+        <item name="android:layout_marginBottom">15px</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <!-- animation 样式 -->
+    <style name="activityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/push_right_in</item>
+        <!--<item name="android:activityOpenExitAnimation">@anim/push_left_out</item>-->
+        <!--<item name="android:activityCloseEnterAnimation">@anim/push_left_in</item>-->
+        <item name="android:activityCloseExitAnimation">@anim/push_right_out</item>
+    </style>
+    <style name="windowAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/in_from_left</item>
+        <!--<item name="android:activityOpenExitAnimation">@anim/push_left_out</item>-->
+        <!--<item name="android:activityCloseEnterAnimation">@anim/push_left_in</item>-->
+        <item name="android:windowExitAnimation">@anim/out_to_left</item>
+    </style>
+
+    <!--<style name="RadioGroupStyle">-->
+    <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--<item name="android:layout_width">0dp</item>-->
+    <!--<item name="android:layout_weight">1</item>-->
+    <!--<item name="android:layout_height">100px</item>-->
+    <!--<item name="android:button">@null</item>-->
+    <!--<item name="android:paddingBottom">10dp</item>-->
+    <!--<item name="android:gravity">center_horizontal|bottom</item>-->
+
+    <!--<item name="android:textColor">@drawable/selector_sync</item>-->
+    <!--&lt;!&ndash;center_vertical&ndash;&gt;-->
+    <!--<item name="android:textSize">20px</item>-->
+    <!--</style>-->
+
+    <style name="RadioGroupStyle">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">142px</item>
+        <item name="android:layout_height">100px</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:textColor">@drawable/selector_main_textcolor</item>
+        <!--center_vertical-->
+        <item name="android:textSize">20px</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>  //Dialog的windowFrame框为无
+        <item name="android:windowIsFloating"> true</item>  //是否浮现在activity之上
+        <item name="android:windowIsTranslucent">true</item> //是否半透明
+        <item name="android:windowNoTitle"> true</item>  //是否显示title
+        <item name="android:background">@android:color/transparent</item>  //设置dialog的背景
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.7</item>  //就是用来控制灰度的值，当为1时，界面除了我们的dialog内容是高亮显示的，dialog以外的区域是黑色的，完全看不到其他内容
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
 </resources>

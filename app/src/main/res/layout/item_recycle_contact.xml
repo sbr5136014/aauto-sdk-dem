@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/selector_item_pressed"
+    android:importantForAccessibility="no"
+    android:layout_height="94px">
+    <!-- android:background="@drawable/selector_item_pressed"-->
+    <!--<ImageView-->
+        <!--android:layout_width="47px"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_marginLeft="26px"-->
+        <!--android:id="@+id/irc_img"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:src="@drawable/bt_right_ic_contact"-->
+        <!--android:layout_height="47px" />-->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="46px"
+        app:cardCornerRadius="23px"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/fafbfc"
+        android:layout_marginLeft="26px"
+        android:id="@+id/irc_img"
+        android:layout_height="46px">
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/bt_right_ic_contact"
+            android:importantForAccessibility="no"
+            android:scaleType="center"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="35px"
+            android:gravity="center"
+            android:id="@+id/irc_firName"
+            android:textColor="#fff"
+            android:importantForAccessibility="no"
+            android:shadowColor="@color/bt_shadow_color"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="2"
+            android:layout_gravity="bottom|right"
+            android:textSize="35px"
+            android:text=""
+            android:layout_height="47px" />
+    </android.support.v7.widget.CardView>
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="47px"-->
+        <!--android:layout_marginLeft="26px"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:id="@+id/irc_img"-->
+        <!--android:background="@drawable/bt_right_ic_contact"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_height="47px">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="35px"-->
+            <!--android:gravity="center"-->
+            <!--android:id="@+id/irc_firName"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="40px"-->
+            <!--android:text=""-->
+            <!--android:layout_height="47px" />-->
+
+    <!--</RelativeLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@id/irc_img"
+        android:layout_marginLeft="17px"
+        android:layout_centerVertical="true"
+        android:importantForAccessibility="no"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/irc_name"
+            android:text="唐智德"
+            android:width="200px"
+            android:textSize="26px"
+            android:importantForAccessibility="no"
+            android:singleLine="true"
+            android:textColor="@color/btcolor12"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/irc_num"
+            android:text="13677888899"
+            android:width="200px"
+            android:importantForAccessibility="no"
+            android:visibility="gone"
+            android:textSize="26px"
+            android:singleLine="true"
+            android:textColor="@color/btcolor18"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

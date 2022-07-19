@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_calling"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.nforetek.bt.phone.CallingActivity">
+
+
+    <RelativeLayout
+        android:layout_width="1360px"
+        android:layout_height="match_parent"
+        android:background="@drawable/right_big_white_bg">
+
+        <RelativeLayout
+            android:layout_width="120px"
+            android:layout_height="150px"
+            android:id="@+id/calling_showDialog"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:layout_width="42px"
+                android:layout_height="42px"
+                android:layout_centerInParent="true"
+                android:src="@drawable/select_collapse" />
+        </RelativeLayout>
+        <!--通话人信息-->
+        <LinearLayout
+            android:id="@+id/calling_info"
+            android:layout_width="353px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="274px"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <android.support.v7.widget.CardView
+                android:layout_width="204px"
+                app:cardCornerRadius="102px"
+                android:background="@color/fafbfc"
+                android:layout_height="204px">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:src="@drawable/icon_contact_image_bg"
+                    android:id="@+id/calling_img_bg"
+                    android:scaleType="center"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_width="185px"
+                    android:gravity="center"
+                    android:id="@+id/calling_firName"
+                    android:textColor="#fff"
+                    android:shadowColor="@color/bt_shadow_color"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:shadowRadius="4"
+                    android:layout_gravity="bottom|right"
+                    android:textSize="170px"
+                    android:text=""
+                    android:layout_height="185px" />
+            </android.support.v7.widget.CardView>
+            <!--<RelativeLayout-->
+                <!--android:layout_width="201px"-->
+                <!--android:id="@+id/calling_img_bg"-->
+                <!--android:background="@drawable/icon_contact_image_bg"-->
+                <!--android:layout_height="201px">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="155px"-->
+                    <!--android:gravity="top|right"-->
+                    <!--android:id="@+id/calling_firName"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:textColor="#fff"-->
+                    <!--android:textSize="150px"-->
+                    <!--android:layout_height="155px" />-->
+
+            <!--</RelativeLayout>-->
+
+            <TextView
+                android:id="@+id/calling_name"
+                android:layout_width="220px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="93px"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/btcolor5"
+                android:textSize="40px" />
+
+            <TextView
+                android:id="@+id/calling_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="47px"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/btcolor6"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/calling_state"
+                android:layout_width="220px"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45px"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/string15"
+                android:textColor="@color/tab_selected"
+                android:textSize="32px" />
+<!--
+                android:text="@string/string15"
+                android:text="00:01"-->
+        </LinearLayout>
+
+        <!--键盘-->
+        <include
+            android:id="@+id/calling_keyboard"
+            layout="@layout/keyboardfragment1"
+            android:layout_width="457px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="226px"
+            android:visibility="gone" />
+
+        <!--底部控制栏-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="66px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/calling_thz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/calling_keyboard_btn"
+                    android:layout_width="110px"
+                    android:layout_height="110px"
+                    android:layout_marginRight="75px"
+                    android:src="@drawable/select_keyboard" />
+
+                <ImageView
+                    android:id="@+id/calling_yuying"
+                    android:layout_width="110px"
+                    android:layout_height="110px"
+                    android:layout_marginRight="75px"
+                    android:src="@drawable/select_mute" />
+
+                <ImageView
+                    android:id="@+id/calling_decice"
+                    android:layout_width="110px"
+                    android:layout_height="110px"
+                    android:layout_marginRight="75px"
+                    android:src="@drawable/select_private" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/calling_hangup"
+                android:layout_width="110px"
+                android:layout_height="110px"
+                android:src="@drawable/select_hangup" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <navi.adayo.com.navicommonui.SimpleAmap
+        android:layout_width="560px"
+        android:id="@+id/main_map"
+        android:layout_height="match_parent">
+    </navi.adayo.com.navicommonui.SimpleAmap>
+</LinearLayout>

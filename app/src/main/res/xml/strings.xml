@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Yiddish typing for flip</string>
+    <string name="e"> ק</string>
+
+    <string name="r"> ר</string>
+    <string name="t">א</string>
+    <string name="y"> ט</string>
+    <string name="u">ו</string>
+    <string name="i">ן</string>
+    <string name="o">ם</string>
+    <string name="p">פ</string>
+    <string name="a">ש</string>
+    <string name="s">ד</string>
+    <string name="d">ג</string>
+    <string name="f">כ</string>
+    <string name="g">ע</string>
+    <string name="h">י</string>
+    <string name="j">ח</string>
+    <string name="k">ל</string>
+    <string name="l">ך</string>
+    <string name="l1">ף</string>
+    <string name="z">ז</string>
+    <string name="x">ס</string>
+    <string name="c">ב</string>
+    <string name="v">ה</string>
+    <string name="b">נ</string>
+    <string name="n">מ</string>
+    <string name="m">צ</string>
+    <string name="m1">ת</string>
+    <string name="m2">ץ</string>
+
+</resources>

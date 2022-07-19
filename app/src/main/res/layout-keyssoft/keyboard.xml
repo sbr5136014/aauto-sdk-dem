@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clRootc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#73000000"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/bg_white_back"
+        android:orientation="vertical"
+        android:padding="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:background="@color/white">
+
+
+                <TextView
+                    android:id="@+id/wp"
+                    android:layout_width="936dp"
+                    android:layout_height="68dp"
+                    tools:layout_editor_absoluteX="2dp"
+                    tools:layout_editor_absoluteY="1dp"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/i"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="i"
+                    app:layout_constraintStart_toEndOf="@+id/u"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="663dp" />
+
+                <TextView
+                    android:id="@+id/p"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="p"
+                    tools:layout_editor_absoluteX="804dp"
+                    tools:layout_editor_absoluteY="663dp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/o"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="o"
+                    tools:layout_editor_absoluteX="716dp"
+                    tools:layout_editor_absoluteY="663dp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="r"
+                    app:layout_constraintStart_toEndOf="@+id/e"
+                    tools:layout_editor_absoluteY="663dp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="t"
+                    android:onClick="onClick"
+                    app:layout_constraintStart_toEndOf="@+id/r"
+                    tools:layout_editor_absoluteY="663dp"
+                    tools:ignore="MissingConstraints,OnClick" />
+
+                <TextView
+                    android:id="@+id/y"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="y"
+                    app:layout_constraintStart_toEndOf="@+id/t"
+                    tools:layout_editor_absoluteY="663dp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/u"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="u"
+                    app:layout_constraintStart_toEndOf="@+id/y"
+                    tools:layout_editor_absoluteY="663dp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/q"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="q"
+                    tools:layout_editor_absoluteX="-1dp"
+                    tools:layout_editor_absoluteY="663dp"
+                    tools:ignore="MissingConstraints" />
+
+
+
+                <TextView
+                    android:id="@+id/w"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="w"
+                    app:layout_constraintStart_toEndOf="@+id/q"
+                    tools:layout_editor_absoluteY="663dp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="e"
+                    tools:layout_editor_absoluteX="184dp"
+                    tools:layout_editor_absoluteY="663dp"
+                    tools:ignore="MissingConstraints" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

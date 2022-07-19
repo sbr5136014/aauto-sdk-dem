@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="1368px"
+    android:layout_height="168px"
+    android:paddingTop="8px"
+    android:paddingRight="8px"
+    android:background="@drawable/bt_right_suspension_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="42px"
+        android:layout_height="42px"
+        android:id="@+id/window1_finish"
+        android:layout_marginLeft="39px"
+        android:src="@drawable/select_expand" />
+
+    <LinearLayout
+        android:layout_width="642px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="126px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="260px"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="16px"
+            android:layout_height="28px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text=""
+                android:id="@+id/window1_type"
+                android:textSize="24px"
+                android:textColor="@color/btcolor11"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="6px"
+                android:layout_toLeftOf="@id/window1_type"
+                android:layout_marginRight="20px"
+                android:src="@drawable/juxing"
+                android:layout_height="28px" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:text=""
+            android:textSize="40px"
+            android:singleLine="true"
+            android:id="@+id/window1_name"
+            android:gravity="right"
+            android:layout_marginTop="37px"
+            android:textColor="@color/btcolor5"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="128px"
+        app:cardCornerRadius="64px"
+        android:layout_marginLeft="76px"
+        android:background="@color/btcolor10"
+        android:layout_height="128px">
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/icon_contact_image"
+            android:scaleType="center"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="101px"
+            android:gravity="center"
+            android:id="@+id/window1_firName"
+            android:textColor="#fff"
+            android:shadowColor="@color/bt_shadow_color"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4"
+            android:layout_gravity="bottom|right"
+            android:textSize="108px"
+            android:text=""
+            android:layout_height="128px" />
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

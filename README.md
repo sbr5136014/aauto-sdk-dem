@@ -1,6 +1,6 @@
 # aauto-sdk-demo
 
-A demo application for ``martoreto/aauto-sdk``.
+A demo application for ``SBR``.
 
 ## How to run it?
 
