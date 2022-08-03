@@ -9,7 +9,7 @@
     <string name="notification_channel_description">Notifications displayed in Android Auto.</string>
 
     <!--wifi Activity-->
-    <string name="no_wifi">No Wi-Fi networks available</string>
+    <string name="no_wifi">No WiFi networks available</string>
     <string name="please_wait">Please wait…</string>
     <string name="turn_on_wifi">Turn on Wi-Fi to connect</string>
     <string name="password">Password</string>
@@ -44,7 +44,7 @@
     <string name="string2">Connect</string>
     <string name="string3">Records</string>
     <string name="string4">Contacts</string>
-    <string name="string16">No contacts,</string>
+    <string name="string16">No contacts</string>
     <string name="string5">Phone Book Sync</string>
     <string name="string6">Phone Book Sync...</string>
     <string name="string7">Sync</string>
@@ -66,32 +66,32 @@
     <string name="w">w</string>
 
 
-    <string name="e">ק</string>
+    <string name="e">e</string>
 
-    <string name="r">ר</string>
-    <string name="t">א</string>
-    <string name="y">ט</string>
-    <string name="u">ו</string>
-    <string name="i">ן</string>
-    <string name="o">ם</string>
-    <string name="p">פ</string>
-    <string name="a">ש</string>
-    <string name="s">ד</string>
-    <string name="d">ג</string>
-    <string name="f">כ</string>
-    <string name="g">ע</string>
-    <string name="h">י</string>
-    <string name="j">ח</string>
-    <string name="k">ל</string>
-    <string name="l">ך</string>
+    <string name="r">r</string>
+    <string name="t">t</string>
+    <string name="y">y</string>
+    <string name="u">uו</string>
+    <string name="i">i</string>
+    <string name="o">o</string>
+    <string name="p">p</string>
+    <string name="a">a</string>
+    <string name="s">s</string>
+    <string name="d">d</string>
+    <string name="f">f</string>
+    <string name="g">g</string>
+    <string name="h">h</string>
+    <string name="j">j</string>
+    <string name="k">k</string>
+    <string name="l">l</string>
     <string name="l1">ף</string>
-    <string name="z">ז</string>
-    <string name="x">ס</string>
-    <string name="c">ב</string>
-    <string name="v">ה</string>
-    <string name="b">נ</string>
-    <string name="n">מ</string>
-    <string name="m">צ</string>
+    <string name="z">z</string>
+    <string name="x">x</string>
+    <string name="c">c</string>
+    <string name="v">v</string>
+    <string name="b">b</string>
+    <string name="n">n</string>
+    <string name="m">m</string>
     <string name="m1">ת</string>
     <string name="m2">ץ</string>
 </resources>

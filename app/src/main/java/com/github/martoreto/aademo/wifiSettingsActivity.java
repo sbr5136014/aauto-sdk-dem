@@ -204,8 +204,6 @@ public class wifiSettingsActivity extends CarActivity implements WifiAndBatteryI
             rsWifiOnOff.setSelection("OFF");
         }
 
-
-
     }
 
     public boolean wifiEnabled() {
@@ -719,13 +717,10 @@ public class wifiSettingsActivity extends CarActivity implements WifiAndBatteryI
     };
     private View.OnClickListener onclickm = new View.OnClickListener() {
         public void onClick(View v) {
-            String BB = ((Button) findViewById(v.getId())).getText().toString();
             String RR = ((Button) findViewById(v.getId())).getText().toString();
 
-            switch (BB) {
+            switch (RR) {
                 case "SHIFT":
-
-
             }
             q.setText(RR);
             w.setText(RR);
@@ -759,11 +754,7 @@ public class wifiSettingsActivity extends CarActivity implements WifiAndBatteryI
             m1.setText(RR);
             m2.setText(RR);
             EditText etPassword = inPassLay.findViewById(R.id.edit_network_password);
-            etPassword.setText(etPassword.getText()+BB);//etPassword.getText()+
-            CarToast.makeText(getApplicationContext(),BB+"",Toast.LENGTH_SHORT).show();
-            // do something when the button is clicked
-            // Yes we will handle click here but which button clicked??? We don't know
-
+            etPassword.setText(etPassword.getText()+RR);
         };
         public void onclick(View v) {
             String BB = ((Button) findViewById(v.getId())).getText().toString();

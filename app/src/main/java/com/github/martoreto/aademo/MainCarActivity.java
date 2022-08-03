@@ -107,24 +107,9 @@ public class MainCarActivity extends CarActivity {
 
                         CarToast.makeText(c, list.getItemAtPosition(i) + "", Toast.LENGTH_SHORT).show();
                     }
-
-
-
-
-
-
-
-
-
-
-
                 });
 
             }
-
-
-
-
             }
             }
 
@@ -152,16 +137,6 @@ public class MainCarActivity extends CarActivity {
         }
 
         setContentView(R.layout.activity_car_main);
-        Button buttonname;
-        String initialFragmentTag1 = FRAGMENT_DEMO;
-//        buttonname = (Button) findViewById(R.id.button) ;
-//        buttonname.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                switchToFragment(initialFragmentTag1);
-//            }
-//        });
-                //as I understand it, the "**this**" denotes the current `view(focus)` in the android program
 
         CarUiController carUiController = getCarUiController();
         carUiController.getStatusBarController().showTitle();
